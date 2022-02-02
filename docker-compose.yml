@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web-server:
+    build: .
+    image: santukoley/late-app
+    container_name: late-app-running
+    ports:
+      - "8080:8080"
+    # volumes:
+    #   - .:/var/share/nginx/html/
