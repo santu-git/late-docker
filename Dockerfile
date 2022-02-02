@@ -14,6 +14,8 @@ RUN npm install
 
 # Bundle app source
 COPY . .
-RUN sleep 150s
+# RUN sleep 150s
 EXPOSE 8080
-CMD [ "node", "server.js" ]
+ADD start.sh /
+RUN chmod +x /start.sh
+CMD ["/start.sh"]
