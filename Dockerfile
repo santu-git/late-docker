@@ -14,6 +14,6 @@ RUN npm install
 
 # Bundle app source
 COPY . .
-RUN sleep 120s
+RUN sleep 150s
 EXPOSE 8080
 CMD [ "node", "server.js" ]
