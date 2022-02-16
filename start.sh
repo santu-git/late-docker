@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# sleep 120s
+sleep 150s
 node server.js
